@@ -15,4 +15,6 @@ Search for GIFs
     ${response}=     GET On Session        giphy   /v1/gifs/search    params=${params}
     Should Be Equal As Strings   ${response.status_code}   200
     ${json}=         Set Variable       ${response.json()}
-    Log              ${json['data']}
+    FOR    ${index}    IN RANGE    10
+        Log To Console    Link ${index}: ${json['data'][${index}]['url']}
+    END
