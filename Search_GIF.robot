@@ -4,7 +4,7 @@ Library           RequestsLibrary
 
 *** Variables ***
 ${BASE_URL}       https://api.giphy.com
-${API_KEY}        K7eDpg9GMVfuo1DMH9n0fgrDeM4koA2V
+${API_KEY}        // Insert your API key here
 ${SEARCH_TERM}    cheeseburger
 
 *** Test Cases ***
